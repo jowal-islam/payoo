@@ -14,8 +14,9 @@
     <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[#F4F5F7] h-[100vh]">
+  <body class="bg-[#F4F5F7]  pt-3">
     <div class="max-w-lg mx-auto bg-white rounded-b-xl">
+      <!-- heading section -->
       <div
         class="flex justify-between items-center border-b-2 border-gray-500 p-3"
       >
@@ -30,12 +31,14 @@
           <button class="btn text-[#08080880]">logout</button>
         </div>
       </div>
+      <!-- wellcome section -->
       <div class="mt300 p-5">
         <h1 class="font-semibold">wellcome to payoo</h1>
         <p class="text-[#08080880]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eos.
         </p>
       </div>
+      <!-- card secton -->
       <div class="min-h-[200px] grid grid-cols-3 gap-5 mt-10 p-5">
         <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
           <img src="./assets/wallet1.png" alt="" class="mx-auto" />
@@ -43,67 +46,123 @@
         </div>
 
         <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
-          <h1>Add Money</h1>
+          <img src="./assets/send1.png" alt="" class="mx-auto" />
+          <h1>Cashout</h1>
         </div>
         <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
-          <h1>Add Money</h1>
+          <img src="./assets/money1.png" alt="" class="mx-auto" />
+          <h1>Transfer Money</h1>
         </div>
         <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
-          <h1>Add Money</h1>
+          <img src="./assets/bonus1.png" alt="" class="mx-auto" />
+          <h1>Get Bonus</h1>
         </div>
         <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
-          <h1>Add Money</h1>
+          <img src="./assets/purse1.png" alt="" class="mx-auto" />
+          <h1>Pay Bill</h1>
         </div>
         <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
-          <h1>Add Money</h1>
+          <img src="./assets/transaction1.png" alt="" class="mx-auto" />
+          <h1>Transactions</h1>
         </div>
       </div>
+      <!-- card  section end -->
     </div>
 
-    <div class="max-w-lg mx-auto bg-white mt-9 rounded-xl p-6">
-      <div>
-        <select class="select w-full rounded-3xl bg-[#F4F5F7]">
-          <option disabled selected>select a bank</option>
-          <option>sonali bank</option>
-          <option>hdmi</option>
-          <option>chishi</option>
-        </select>
-      </div>
-      <div>
-        <fieldset class="fieldset">
-          <legend class="fieldset-legend">Bank Account Number</legend>
-          <input
-            type="text"
-            class="input w-full rounded-3xl bg-[#F4F5F7]"
-            placeholder="Enter the number"
-          />
-        </fieldset>
-      </div>
-      <div>
-        <fieldset class="fieldset">
-          <legend class="fieldset-legend">Amount to Add</legend>
-          <input
-            type="text"
-            class="input w-full rounded-3xl bg-[#F4F5F7]"
-            placeholder="Enter the Amount"
-          />
-        </fieldset>
-      </div>
-      <div>
-        <fieldset class="fieldset">
-          <legend class="fieldset-legend">Pin Number</legend>
-          <input
-            type="text"
-            class="input w-full rounded-3xl bg-[#F4F5F7]"
-            placeholder="Enter the 4 digit number"
-          />
-        </fieldset>
+    <!-- form section Add money-->
+    <div>
+      <h1 class="max-w-lg mx-auto mt-7 text-xl">Add Money</h1>
+      <div class="max-w-lg mx-auto bg-white mt-3 rounded-xl p-6">
+        <div>
+          <h3>select a bank</h3>
+          <select class="select w-full rounded-3xl bg-[#F4F5F7] mt-2">
+            <option disabled selected>select bank</option>
+            <option>sonali</option>
+            <option>pobali</option>
+            <option>ashiya</option>
+          </select>
+        </div>
+        <div>
+          <fieldset class="fieldset">
+            <legend class="fieldset-legend">Bank Account Number</legend>
+            <input
+              type="text"
+              class="input w-full rounded-3xl bg-[#F4F5F7]"
+              placeholder="Enter the number"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset class="fieldset">
+            <legend class="fieldset-legend">Amount to Add</legend>
+            <input
+              type="text"
+              class="input w-full rounded-3xl bg-[#F4F5F7]"
+              placeholder="Enter the Amount"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset class="fieldset">
+            <legend class="fieldset-legend">Pin Number</legend>
+            <input
+              type="text"
+              class="input w-full rounded-3xl bg-[#F4F5F7]"
+              placeholder="Enter the 4 digit number"
+            />
+          </fieldset>
+        </div>
+        <button
+          class="btn w-full rounded-3xl mt-3 bg-[#0874F2] p-6 text-white text-lg"
+        >
+          Add Money
+        </button>
       </div>
     </div>
+    <!-- form section end Add money-->
+
+    <!-- form section  cash out-->
+    <div>
+      <h1 class="max-w-lg mx-auto mt-7 text-xl">Cash Out</h1>
+      <div class="max-w-lg mx-auto bg-white mt-3 rounded-xl p-6">
+       
+        <div>
+          <fieldset class="fieldset">
+            <legend class="fieldset-legend">Agent Number</legend>
+            <input
+              type="text"
+              class="input w-full rounded-3xl bg-[#F4F5F7]"
+              placeholder="Enter the number"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset class="fieldset">
+            <legend class="fieldset-legend">Amount</legend>
+            <input
+              type="text"
+              class="input w-full rounded-3xl bg-[#F4F5F7]"
+              placeholder="Enter the Amount"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset class="fieldset">
+            <legend class="fieldset-legend">Pin Number</legend>
+            <input
+              type="text"
+              class="input w-full rounded-3xl bg-[#F4F5F7]"
+              placeholder="Enter the 4 digit number"
+            />
+          </fieldset>
+        </div>
+        <button
+          class="btn w-full rounded-3xl mt-3 bg-[#0874F2] p-6 text-white text-lg"
+        >
+          Withdraw Money
+        </button>
+      </div>
+    </div>
+    <!-- form section  end cash out-->
   </body>
 </html>
