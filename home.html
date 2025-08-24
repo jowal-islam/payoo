@@ -1,62 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home</title>
-     <!-- diziy ui -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- diziy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- tailwind css -->
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-</head>
-<body class="bg-[#f4f5f7] h-[100vh] ">
-   <div class="max-w-lg mx-auto bg-white rounded-b-xl">
-        <div class="  flex justify-between items-center border-b-2 border-gray-500 p-3" >
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-[#F4F5F7] h-[100vh]">
+    <div class="max-w-lg mx-auto bg-white rounded-b-xl">
+      <div
+        class="flex justify-between items-center border-b-2 border-gray-500 p-3"
+      >
         <div class="flex">
-           <img src="./assets/Group.png" alt="" class="h-[45px]">
-           <div>
+          <img src="./assets/Group.png" alt="" class="h-[45px]" />
+          <div>
             <h2 class="font-semibold">$<span>45000</span></h2>
             <p class="text-[#08080880]">availavle balance</p>
-           </div>
+          </div>
         </div>
         <div>
-           <button class="btn text-[#08080880]">logout</button>
+          <button class="btn text-[#08080880]">logout</button>
         </div>
-        </div>
-        <div class=" mt300 p-5">
+      </div>
+      <div class="mt300 p-5">
         <h1 class="font-semibold">wellcome to payoo</h1>
-        <p class="text-[#08080880]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eos.</p>
+        <p class="text-[#08080880]">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, eos.
+        </p>
+      </div>
+      <div class="min-h-[200px] grid grid-cols-3 gap-5 mt-10 p-5">
+        <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
+          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
+          <h1>Add Money</h1>
         </div>
-          <div class=" min-h-[200px]  grid grid-cols-3 gap-5 mt-10 p-5 ">
-          <div class="border-2 border-gray-300 text-center p-5  rounded-xl">
-            <img  src="./assets/wallet1.png" alt="" class="mx-auto">
-            <h1>Add Money</h1>
-          </div>
 
-           <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-            <img  src="./assets/wallet1.png" alt="" class="mx-auto">
-            <h1>Add Money</h1>
-          </div>
-           <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-            <img  src="./assets/wallet1.png" alt="" class="mx-auto">
-            <h1>Add Money</h1>
-          </div>
-           <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-            <img  src="./assets/wallet1.png" alt="" class="mx-auto">
-            <h1>Add Money</h1>
-          </div>
-           <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-            <img  src="./assets/wallet1.png" alt="" class="mx-auto">
-            <h1>Add Money</h1>
-          </div>
-           <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
-            <img  src="./assets/wallet1.png" alt="" class="mx-auto">
-            <h1>Add Money</h1>
-          </div>
+        <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
+          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
+          <h1>Add Money</h1>
         </div>
-   </div>
-</body>
+        <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
+          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
+          <h1>Add Money</h1>
+        </div>
+        <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
+          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
+          <h1>Add Money</h1>
+        </div>
+        <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
+          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
+          <h1>Add Money</h1>
+        </div>
+        <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
+          <img src="./assets/wallet1.png" alt="" class="mx-auto" />
+          <h1>Add Money</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-lg mx-auto bg-white mt-9 rounded-xl p-6">
+      <div>
+        <select class="select w-full rounded-3xl bg-[#F4F5F7]">
+          <option disabled selected>select a bank</option>
+          <option>sonali bank</option>
+          <option>hdmi</option>
+          <option>chishi</option>
+        </select>
+      </div>
+      <div>
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">Bank Account Number</legend>
+          <input
+            type="text"
+            class="input w-full rounded-3xl bg-[#F4F5F7]"
+            placeholder="Enter the number"
+          />
+        </fieldset>
+      </div>
+      <div>
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">Amount to Add</legend>
+          <input
+            type="text"
+            class="input w-full rounded-3xl bg-[#F4F5F7]"
+            placeholder="Enter the Amount"
+          />
+        </fieldset>
+      </div>
+      <div>
+        <fieldset class="fieldset">
+          <legend class="fieldset-legend">Pin Number</legend>
+          <input
+            type="text"
+            class="input w-full rounded-3xl bg-[#F4F5F7]"
+            placeholder="Enter the 4 digit number"
+          />
+        </fieldset>
+      </div>
+    </div>
+  </body>
 </html>
