@@ -23,12 +23,12 @@
         <div class="flex">
           <img src="./assets/Group.png" alt="" class="h-[45px]" />
           <div>
-            <h2 class="font-semibold">$<span>45000</span></h2>
+            <h2 class="font-semibold">$<span id="balance" class="text-2xl text-blue-700">45000</span></h2>
             <p class="text-[#08080880]">availavle balance</p>
           </div>
         </div>
         <div>
-          <button class="btn text-[#08080880]">logout</button>
+          <button class="btn text-blue-700">logout</button>
         </div>
       </div>
       <!-- wellcome section -->
@@ -40,12 +40,12 @@
       </div>
       <!-- card secton -->
       <div class="min-h-[200px] grid grid-cols-3 gap-5 mt-10 p-5">
-        <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
+        <div id="money-btn" class="border-2 border-gray-300 text-center p-5 rounded-xl">
           <img src="./assets/wallet1.png" alt="" class="mx-auto" />
           <h1>Add Money</h1>
         </div>
 
-        <div class="border-2 border-gray-300 text-center p-5 rounded-xl">
+        <div id="cashout-btn" class="border-2 border-gray-300 text-center p-5 rounded-xl">
           <img src="./assets/send1.png" alt="" class="mx-auto" />
           <h1>Cashout</h1>
         </div>
@@ -70,7 +70,7 @@
     </div>
 
     <!-- form section Add money-->
-    <div>
+    <div id="add-mony-form" class="hidden">
       <h1 class="max-w-lg mx-auto mt-7 text-xl">Add Money</h1>
       <div class="max-w-lg mx-auto bg-white mt-3 rounded-xl p-6">
         <div>
@@ -85,7 +85,7 @@
         <div>
           <fieldset class="fieldset">
             <legend class="fieldset-legend">Bank Account Number</legend>
-            <input
+            <input id="acc-number"
               type="text"
               class="input w-full rounded-3xl bg-[#F4F5F7]"
               placeholder="Enter the number"
@@ -94,8 +94,8 @@
         </div>
         <div>
           <fieldset class="fieldset">
-            <legend class="fieldset-legend">Amount to Add</legend>
-            <input
+            <legend  class="fieldset-legend">Amount to Add</legend>
+            <input id="Amount"
               type="text"
               class="input w-full rounded-3xl bg-[#F4F5F7]"
               placeholder="Enter the Amount"
@@ -105,7 +105,7 @@
         <div>
           <fieldset class="fieldset">
             <legend class="fieldset-legend">Pin Number</legend>
-            <input
+            <input id="pin-number"
               type="text"
               class="input w-full rounded-3xl bg-[#F4F5F7]"
               placeholder="Enter the 4 digit number"
@@ -113,7 +113,7 @@
           </fieldset>
         </div>
         <button
-          class="btn w-full rounded-3xl mt-3 bg-[#0874F2] p-6 text-white text-lg"
+           id="add-money-btn" class="btn w-full rounded-3xl mt-3 bg-[#0874F2] p-6 text-white text-lg"
         >
           Add Money
         </button>
@@ -122,7 +122,7 @@
     <!-- form section end Add money-->
 
     <!-- form section  cash out-->
-    <div>
+    <div id="cashout-from" class="hidden">
       <h1 class="max-w-lg mx-auto mt-7 text-xl">Cash Out</h1>
       <div class="max-w-lg mx-auto bg-white mt-3 rounded-xl p-6">
        
@@ -164,5 +164,6 @@
       </div>
     </div>
     <!-- form section  end cash out-->
+     <script src="home.js"></script>
   </body>
 </html>
