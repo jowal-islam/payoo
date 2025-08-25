@@ -9,8 +9,8 @@ document.getElementById("money-btn").addEventListener("click", function () {
 document.getElementById("cashout-btn").addEventListener("click", function () {
   const addMoneyForm = document.getElementById("add-mony-form");
   const cashoutFrom = document.getElementById("cashout-from");
-  cashoutFrom.classList.remove('hidden')
-  cashoutFrom.classList.add('block')
+  cashoutFrom.classList.remove("hidden");
+  cashoutFrom.classList.add("block");
   addMoneyForm.classList.add("hidden");
 });
 
@@ -32,3 +32,32 @@ const addMneyBtn = document
   });
 
 //   cashout future add
+const withdrawBtn = document
+  .getElementById("withdraw-btn")
+  .addEventListener("click", function () {
+    const pinNumber = parseInt(document.getElementById("cashout-pin").value);
+    const accNumber = parseInt(document.getElementById("acc-number").value);
+
+    const balance = parseInt(document.getElementById("balance").innerText);
+    const amount = parseInt(document.getElementById("cashAmount").value);
+
+    if (isNaN(amount) || amount <= 0) {
+      alert("Please enter a valid amount");
+      return;
+    }
+    if (pinNumber !== 1234) {
+      alert("Wrong PIN");
+      return;
+    }
+    if (amount > balance) {
+      alert("Insufficient balance!");
+      return;
+    }
+
+    // Withdraw
+    const newBalance = balance - amount;
+    document.getElementById("balance").innerText = newBalance;
+    // alert(`Successfully withdrawn: ${amount}`);
+
+   
+  });
